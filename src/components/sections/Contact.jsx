@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import AnimateOnScroll from "../AnimateOnScroll";
-import Footer from "./Footer";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -11,6 +10,7 @@ function Contact() {
     message: "",
   });
   const [isSending, setIsSending] = useState(false);
+  const captchaRef = useRef();
   const [captcha, setCaptcha] = useState(null);
 
   const handleSubmit = (e) => {
@@ -33,6 +33,7 @@ function Contact() {
       .then((result) => {
         alert("Message Sent!");
         setCaptcha(null);
+        captchaRef.current.reset();
         setFormData({
           name: "",
           email: "",
@@ -105,7 +106,6 @@ function Contact() {
                     Message
                   </label>
                 </div>
-                {/* reCAPTCHA widget styled */}
                 <div className="my-3 flex h-[70px] w-full justify-center">
                   <div className="inline-block h-full origin-top scale-75 rounded-lg p-2 shadow-md">
                     <ReCAPTCHA
@@ -131,7 +131,6 @@ function Contact() {
           </div>
         </AnimateOnScroll>
       </section>
-      <Footer />
     </>
   );
 }
