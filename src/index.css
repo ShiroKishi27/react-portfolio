@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+  background: #0a0a0a;
+  color: #fef4f6;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@theme {
+  --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
+
+  @keyframes pulse-subtle {
+    0%,100% {
+      opacity: 1;
+    } 50% {
+      opacity: .6;
+    }
+  }
+}
+
+@utility star {
+  @apply absolute rounded-full bg-white;
+  box-shadow: 0 0 10px 2px rgba(255,255,255,0.5)  
+}
+
+
+@layer utilities {
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }    
+  }
+
+  .animate-blink {
+    animation: blink 0.8s step-end infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }    
+  }
+
+  .animate-loading-bar {
+    animation: loading 0.8s ease infinite;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.9s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
