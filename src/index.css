@@ -27,6 +27,50 @@ html, body {
   box-shadow: 0 0 10px 2px rgba(255,255,255,0.5)  
 }
 
+@utility star-cross {
+  @apply absolute rounded-full bg-white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 0 0 12px 3px rgba(255,255,255,0.6);
+}
+
+.star-cross::before,
+.star-cross::after {
+  content: "";
+  position: absolute;
+  background: lightskyblue;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(75deg);
+  border-radius: 9999px; /* full round */
+}
+
+.star-cross::before {
+  width: 200%;
+  height: 2px;
+}
+
+.star-cross::after {
+  width: 2px;
+  height: 200%;
+}
+
+@keyframes starburst {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.4);
+  }
+}
+
+.animate-starburst {
+  animation: starburst 3s ease-in-out infinite;
+}
+
+
 
 @layer utilities {
   @keyframes blink {
