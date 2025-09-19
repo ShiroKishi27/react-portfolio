@@ -13,9 +13,9 @@ function Project() {
           </h2>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             <div className="rounded-xl border border-white/10 bg-white/2 p-6 text-white shadow-[0_8px_32px_rgba(0,0,0,0.15)] backdrop-blur-sm hover:translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]">
-              <div class="absolute inset-0 rounded-xl bg-gradient-to-tl from-white/5 to-transparent opacity-30"></div>
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-tl from-white/5 to-transparent opacity-30"></div>
 
-              <div class="absolute inset-0 rounded-xl ring-1 ring-white/30"></div>
+              <div className="absolute inset-0 rounded-xl ring-1 ring-white/30"></div>
               <h3 className="mb-2 text-xl">
                 <strong>HydroGuard:</strong> Flood Management Suite (Frontend)
               </h3>
@@ -37,9 +37,9 @@ function Project() {
               </div>
             </div>
             <div className="rounded-xl border border-white/10 bg-white/2 p-6 text-white shadow-[0_8px_32px_rgba(0,0,0,0.15)] backdrop-blur-sm hover:translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]">
-              <div class="absolute inset-0 rounded-xl bg-gradient-to-tl from-white/5 to-transparent opacity-30"></div>
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-tl from-white/5 to-transparent opacity-30"></div>
 
-              <div class="absolute inset-0 rounded-xl ring-1 ring-white/30"></div>
+              <div className="absolute inset-0 rounded-xl ring-1 ring-white/30"></div>
               <h3 className="mb-2 text-xl">Café Business Web App (Frontend)</h3>
               <p className="mb-2 text-gray-400">
                 An ordering system where users can browse and order the products
@@ -59,9 +59,9 @@ function Project() {
               </div>
             </div>
             <div className="rounded-xl border border-white/10 bg-white/2 p-6 text-white shadow-[0_8px_32px_rgba(0,0,0,0.15)] backdrop-blur-sm hover:translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]">
-              <div class="absolute inset-0 rounded-xl bg-gradient-to-tl from-white/5 to-transparent opacity-30"></div>
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-tl from-white/5 to-transparent opacity-30"></div>
 
-              <div class="absolute inset-0 rounded-xl ring-1 ring-white/30"></div>
+              <div className="absolute inset-0 rounded-xl ring-1 ring-white/30"></div>
               <h3 className="mb-2 text-xl">
                 <strong>AMOSYS:</strong> Attendance Monitoring System using RFID
               </h3>

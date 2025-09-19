@@ -8,7 +8,7 @@ function Home() {
     >
       <AnimateOnScroll>
         <div className="z-10 px-6 text-center">
-          <h1 className="mb-6 bg-gradient-to-r from-blue-800 to-cyan-400 bg-clip-text text-5xl font-bold text-transparent md:text-7xl">
+          <h1 className="mb-6 bg-gradient-to-r from-blue-800 to-cyan-400 bg-clip-text p-1 text-5xl font-bold text-transparent md:text-7xl">
             Hi, I'm Heimsly
           </h1>
           <p className="mx-auto mb-8 max-w-lg text-lg text-gray-400">
