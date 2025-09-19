@@ -56,12 +56,15 @@ function Contact() {
         className="relative flex min-h-screen flex-col items-center justify-center py-20"
       >
         <AnimateOnScroll>
-          <div className="w-100 px-4">
-            <h2 className="bg-gradient-to-r from-blue-800 to-cyan-400 bg-clip-text text-center text-3xl font-bold text-transparent">
+          <div className="w-100 overflow-hidden">
+            <h2 className="mb-8 bg-gradient-to-r from-blue-800 to-cyan-400 bg-clip-text text-center text-3xl font-bold text-transparent">
               Get in Touch
             </h2>
             <form action="" className="space-y-4" onSubmit={handleSubmit}>
-              <div className="form-box mx-auto max-w-md p-3">
+              <div className="form-box mx-auto max-w-md rounded-2xl border border-white/30 bg-white/2 p-4 text-white shadow-[0_8px_32px_rgba(0,0,0,0.25)] backdrop-blur-sm">
+                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/30 to-transparent opacity-40"></div>
+
+                <div class="absolute inset-0 rounded-2xl ring-1 ring-white/30"></div>
                 <div className="relative my-3 h-12 w-full">
                   <input
                     id="name"
