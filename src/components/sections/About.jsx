@@ -67,7 +67,7 @@ function About() {
           </div>
           <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
             <div className="rounded-xl border border-white/10 bg-white/2 p-6 text-white shadow-[0_8px_32px_rgba(0,0,0,0.15)] backdrop-blur-sm transition-all hover:translate-y-1">
-              <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-white/30 to-transparent opacity-30"></div>
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-tl from-white/30 to-transparent opacity-30"></div>
 
               <div className="absolute inset-0 rounded-xl ring-1 ring-white/30"></div>
               <h3 className="mb-4 text-xl font-bold"> 🏫 Education </h3>
@@ -83,7 +83,7 @@ function About() {
               </ul>
             </div>
             <div className="rounded-xl border border-white/10 bg-white/2 p-6 text-white shadow-[0_8px_32px_rgba(0,0,0,0.15)] backdrop-blur-sm transition-all hover:translate-y-1">
-              <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-white/30 to-transparent opacity-30"></div>
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-tl from-white/30 to-transparent opacity-30"></div>
 
               <div className="absolute inset-0 rounded-xl ring-1 ring-white/30"></div>
               <h3 className="mb-4 text-xl font-bold"> 👨‍💻 Work Experience </h3>
