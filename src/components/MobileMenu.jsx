@@ -1,4 +1,12 @@
+import { NavLink } from "react-router-dom";
+
 function MobileMenu({ menuOpen, setMenuOpen }) {
+  const links = [
+    { name: "Home", to: "/" },
+    { name: "About", to: "/about" },
+    { name: "Project", to: "/project" },
+    { name: "Contact", to: "/contact" },
+  ];
   return (
     <>
       <div
@@ -11,34 +19,17 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
         >
           &times;
         </button>
-        <a
-          href="#home"
-          onClick={() => setMenuOpen(false)}
-          className={`my-4 transform text-2xl font-semibold text-white transition-transform duration-300 ${menuOpen ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"}`}
-        >
-          Home
-        </a>
-        <a
-          href="#about"
-          onClick={() => setMenuOpen(false)}
-          className={`my-4 transform text-2xl font-semibold text-white transition-transform duration-300 ${menuOpen ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"}`}
-        >
-          About
-        </a>
-        <a
-          href="#project"
-          onClick={() => setMenuOpen(false)}
-          className={`my-4 transform text-2xl font-semibold text-white transition-transform duration-300 ${menuOpen ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"}`}
-        >
-          Project
-        </a>
-        <a
-          href="#contact"
-          onClick={() => setMenuOpen(false)}
-          className={`my-4 transform text-2xl font-semibold text-white transition-transform duration-300 ${menuOpen ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"}`}
-        >
-          Contact
-        </a>
+        {links.map((link) => (
+          <NavLink
+            key={link.to}
+            to={link.to}
+            onClick={() => setMenuOpen(false)}
+            end={link.to === "/"}
+            className={`my-4 transform text-2xl font-semibold text-white transition-transform duration-300 ${menuOpen ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"}`}
+          >
+            {link.name}
+          </NavLink>
+        ))}
       </div>
     </>
   );
