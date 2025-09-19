@@ -40,7 +40,10 @@ function Contact() {
           message: "",
         });
       })
-      .catch(() => alert("Something went wrong. Please try again."))
+      .catch((err) => {
+        console.log(err);
+        alert("Something went wrong. Please try again.");
+      })
       .finally(() => {
         setIsSending(false);
       });
@@ -109,6 +112,7 @@ function Contact() {
                 <div className="my-3 flex h-[70px] w-full justify-center">
                   <div className="inline-block h-full origin-top scale-75 rounded-lg p-2 shadow-md">
                     <ReCAPTCHA
+                      ref={captchaRef}
                       sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
                       theme="dark"
                       onChange={(token) => setCaptcha(token)}
