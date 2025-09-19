@@ -56,15 +56,15 @@ function Contact() {
         className="relative flex min-h-screen flex-col items-center justify-center py-20"
       >
         <AnimateOnScroll>
-          <div className="w-100 overflow-hidden">
+          <div className="w-85 overflow-hidden">
             <h2 className="mb-8 bg-gradient-to-r from-blue-800 to-cyan-400 bg-clip-text text-center text-3xl font-bold text-transparent">
               Get in Touch
             </h2>
             <form action="" className="space-y-4" onSubmit={handleSubmit}>
               <div className="form-box mx-auto max-w-md rounded-2xl border border-white/30 bg-white/2 p-4 text-white shadow-[0_8px_32px_rgba(0,0,0,0.25)] backdrop-blur-sm">
-                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/30 to-transparent opacity-40"></div>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/30 to-transparent opacity-40"></div>
 
-                <div class="absolute inset-0 rounded-2xl ring-1 ring-white/30"></div>
+                <div className="absolute inset-0 rounded-2xl ring-1 ring-white/30"></div>
                 <div className="relative my-3 h-12 w-full">
                   <input
                     id="name"
@@ -77,7 +77,10 @@ function Contact() {
                     }
                     className="peer h-full w-full rounded-xl border-b-1 border-white bg-white/10 px-3 text-white/70 transition duration-500 outline-none"
                   />
-                  <label className="absolute top-1/2 left-3 -translate-y-1/2 text-base text-white transition-all duration-500 peer-valid:-top-1 peer-valid:text-xs peer-focus:-top-1 peer-focus:text-xs">
+                  <label
+                    for="name"
+                    className="absolute top-1/2 left-3 -translate-y-1/2 text-base text-white transition-all duration-500 peer-valid:-top-1 peer-valid:text-xs peer-focus:-top-1 peer-focus:text-xs"
+                  >
                     Name
                   </label>
                 </div>
@@ -93,7 +96,10 @@ function Contact() {
                     }
                     className="peer h-full w-full rounded-xl border-b-1 border-white bg-white/10 px-3 text-white/70 transition duration-500 outline-none"
                   />
-                  <label className="absolute top-1/2 left-3 -translate-y-1/2 text-base text-white transition-all duration-500 peer-valid:-top-1 peer-valid:text-xs peer-focus:-top-1 peer-focus:text-xs">
+                  <label
+                    for="email"
+                    className="absolute top-1/2 left-3 -translate-y-1/2 text-base text-white transition-all duration-500 peer-valid:-top-1 peer-valid:text-xs peer-focus:-top-1 peer-focus:text-xs"
+                  >
                     Email
                   </label>
                 </div>
@@ -108,12 +114,15 @@ function Contact() {
                     }
                     className="peer h-full w-full resize-none rounded-2xl border-b-1 border-white bg-white/10 px-3 text-white/70 transition duration-500 outline-none"
                   />
-                  <label className="absolute top-4 left-3 -translate-y-1/2 text-base text-white transition-all duration-500 peer-valid:-top-1 peer-valid:text-xs peer-focus:-top-1 peer-focus:text-xs">
+                  <label
+                    for="message"
+                    className="absolute top-4 left-3 -translate-y-1/2 text-base text-white transition-all duration-500 peer-valid:-top-1 peer-valid:text-xs peer-focus:-top-1 peer-focus:text-xs"
+                  >
                     Message
                   </label>
                 </div>
                 <div className="my-3 flex h-[70px] w-full justify-center">
-                  <div className="inline-block h-full origin-top scale-75 rounded-lg p-2 shadow-md">
+                  <div className="inline-block h-full origin-top scale-80 rounded-lg p-2 shadow-md">
                     <ReCAPTCHA
                       ref={captchaRef}
                       sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
