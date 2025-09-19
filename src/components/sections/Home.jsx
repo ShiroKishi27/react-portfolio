@@ -1,4 +1,5 @@
 import AnimateOnScroll from "../AnimateOnScroll";
+import { NavLink } from "react-router-dom";
 
 function Home() {
   return (
@@ -18,18 +19,18 @@ function Home() {
             experience and exceptional performance.
           </p>
           <div className="flex justify-center space-x-4">
-            <a
-              href="#project"
+            <NavLink
+              to={"/project"}
               className="transistion relative overflow-hidden rounded-4xl bg-blue-500 px-6 py-3 font-medium text-white hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
             >
               View Project
-            </a>
-            <a
-              href="#contact"
+            </NavLink>
+            <NavLink
+              to={"/contact"}
               className="transistion relative rounded-4xl border border-blue-500/50 px-6 py-3 font-medium text-blue-500 hover:-translate-y-0.5 hover:bg-blue-500/30"
             >
               Contact Me
-            </a>
+            </NavLink>
           </div>
         </div>
       </AnimateOnScroll>

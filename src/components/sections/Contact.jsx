@@ -78,7 +78,7 @@ function Contact() {
                     className="peer h-full w-full rounded-xl border-b-1 border-white bg-white/10 px-3 text-white/70 transition duration-500 outline-none"
                   />
                   <label
-                    for="name"
+                    htmlFor="name"
                     className="absolute top-1/2 left-3 -translate-y-1/2 text-base text-white transition-all duration-500 peer-valid:-top-1 peer-valid:text-xs peer-focus:-top-1 peer-focus:text-xs"
                   >
                     Name
@@ -97,7 +97,7 @@ function Contact() {
                     className="peer h-full w-full rounded-xl border-b-1 border-white bg-white/10 px-3 text-white/70 transition duration-500 outline-none"
                   />
                   <label
-                    for="email"
+                    htmlFor="email"
                     className="absolute top-1/2 left-3 -translate-y-1/2 text-base text-white transition-all duration-500 peer-valid:-top-1 peer-valid:text-xs peer-focus:-top-1 peer-focus:text-xs"
                   >
                     Email
@@ -115,7 +115,7 @@ function Contact() {
                     className="peer h-full w-full resize-none rounded-2xl border-b-1 border-white bg-white/10 px-3 text-white/70 transition duration-500 outline-none"
                   />
                   <label
-                    for="message"
+                    htmlFor="message"
                     className="absolute top-4 left-3 -translate-y-1/2 text-base text-white transition-all duration-500 peer-valid:-top-1 peer-valid:text-xs peer-focus:-top-1 peer-focus:text-xs"
                   >
                     Message
