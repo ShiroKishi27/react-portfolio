@@ -1,14 +1,12 @@
 import "./App.css";
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import LoadingPage from "./components/LoadingPage";
 import MobileMenu from "./components/MobileMenu";
 import NavBar from "./components/NavBar";
-import Home from "./components/sections/Home";
-import About from "./components/sections/About";
-import Project from "./components/sections/Project";
-import Contact from "./components/sections/Contact";
 import StarBackground from "./components/StarBackground";
 import ArrowUp from "./components/ArrowUp";
+import ScrollToSection from "./ScrollToSection";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -23,10 +21,25 @@ function App() {
         <StarBackground />
         <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <Home />
-        <About />
-        <Project />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<ScrollToSection sectionId="home" />} />
+          <Route
+            path="/about"
+            element={<ScrollToSection sectionId="about" />}
+          />
+          <Route
+            path="/project"
+            element={<ScrollToSection sectionId="project" />}
+          />
+          <Route
+            path="/contact"
+            element={<ScrollToSection sectionId="contact" />}
+          />
+          <Route
+            path="*"
+            element={<h1 className="text-white">404 - Page Not Found</h1>}
+          />
+        </Routes>
         <ArrowUp />
       </div>
     </>
