@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 function LoadingPage({ onComplete }) {
   const [text, setText] = useState("");
   const [isVisible, setIsVisible] = useState(true);
-  const fullText = "< Hello & Welcome />";
+  const fullText = "<Hello & Welcome/>";
 
   useEffect(() => {
     document.body.classList.add("overflow-hidden");
@@ -30,7 +30,7 @@ function LoadingPage({ onComplete }) {
 
   return (
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black text-gray-100">
-      <div className="mb-4 font-mono text-4xl font-bold">
+      <div className="mb-4 text-3xl font-bold">
         {text} <span className="animate-blink ml-1">{isVisible && "|"}</span>
       </div>
 

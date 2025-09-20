@@ -24,14 +24,14 @@ function About() {
       className="relative min-h-screen items-center justify-center py-20"
     >
       <AnimateOnScroll>
-        <div className="mx-auto max-w-3xl overflow-hidden p-1 px-4">
+        <div className="mx-auto max-w-3xl overflow-hidden p-1 px-6">
           <h2 className="mb-8 bg-gradient-to-r from-blue-800 to-cyan-400 bg-clip-text text-center text-3xl font-bold text-transparent">
             About Me
           </h2>
           <div className="rounded-2xl border border-white/10 bg-white/2 p-8 text-white shadow-[0_8px_32px_rgba(0,0,0,0.15)] backdrop-blur-sm transition-all hover:translate-y-1">
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/30 to-transparent opacity-30"></div>
+            <div className="absolute inset-0 -z-1 rounded-2xl bg-gradient-to-br from-white/30 to-transparent opacity-30"></div>
+            <div className="absolute inset-0 -z-1 rounded-2xl ring-1 ring-white/30"></div>
 
-            <div className="absolute inset-0 rounded-2xl ring-1 ring-white/30"></div>
             <p className="mb-3 text-gray-300">
               A fresh graduate currently learning ReactJS and TailwindCSS by
               applying new skills directly to this portfolio.
@@ -67,9 +67,9 @@ function About() {
           </div>
           <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
             <div className="rounded-xl border border-white/10 bg-white/2 p-6 text-white shadow-[0_8px_32px_rgba(0,0,0,0.15)] backdrop-blur-sm transition-all hover:translate-y-1">
-              <div className="absolute inset-0 rounded-xl bg-gradient-to-tl from-white/30 to-transparent opacity-30"></div>
+              <div className="absolute inset-0 -z-1 rounded-xl bg-gradient-to-tl from-white/30 to-transparent opacity-30"></div>
+              <div className="absolute inset-0 -z-1 rounded-xl ring-1 ring-white/30"></div>
 
-              <div className="absolute inset-0 rounded-xl ring-1 ring-white/30"></div>
               <h3 className="mb-4 text-xl font-bold"> 🏫 Education </h3>
               <ul className="list-inside list-disc">
                 <li className="mb-2">
@@ -83,9 +83,9 @@ function About() {
               </ul>
             </div>
             <div className="rounded-xl border border-white/10 bg-white/2 p-6 text-white shadow-[0_8px_32px_rgba(0,0,0,0.15)] backdrop-blur-sm transition-all hover:translate-y-1">
-              <div className="absolute inset-0 rounded-xl bg-gradient-to-tl from-white/30 to-transparent opacity-30"></div>
+              <div className="absolute inset-0 -z-1 rounded-xl bg-gradient-to-tl from-white/30 to-transparent opacity-30"></div>
+              <div className="absolute inset-0 -z-1 rounded-xl ring-1 ring-white/30"></div>
 
-              <div className="absolute inset-0 rounded-xl ring-1 ring-white/30"></div>
               <h3 className="mb-4 text-xl font-bold"> 👨‍💻 Work Experience </h3>
               <div className="space-y-2 text-gray-300">
                 <h4>
