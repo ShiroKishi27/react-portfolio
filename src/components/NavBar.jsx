@@ -24,7 +24,7 @@ function NavBar({ menuOpen, setMenuOpen }) {
               className="relative px-3 py-2 font-mono text-xl font-bold text-gray-300 transition-colors duration-200 hover:text-white"
             >
               The{" "}
-              <span className="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
                 Portfolio
               </span>
             </NavLink>
@@ -49,7 +49,7 @@ function NavBar({ menuOpen, setMenuOpen }) {
                   className={({ isActive }) =>
                     `relative px-3 py-2 transition-colors duration-200 ${
                       isActive
-                        ? "text-cyan-400 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-cyan-400 after:content-['']"
+                        ? "bg-linear-to-r from-blue-500 to-cyan-400 bg-clip-text font-bold text-transparent after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-linear-to-r after:from-blue-500 after:to-cyan-400 after:content-['']"
                         : "text-gray-300 hover:text-white"
                     }`
                   }

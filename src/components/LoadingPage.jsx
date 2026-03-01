@@ -34,7 +34,7 @@ function LoadingPage({ onComplete }) {
         {text} <span className="animate-blink ml-1">{isVisible && "|"}</span>
       </div>
 
-      <div className="relative h-[2px] w-[200px] overflow-hidden rounded bg-gray-800">
+      <div className="relative h-0.5 w-[200px] overflow-hidden rounded bg-gray-800">
         <div className="animate-loading-bar h-full w-[40%] bg-blue-500 shadow-[0_0_15px_#3b82f6]"></div>
       </div>
     </div>
