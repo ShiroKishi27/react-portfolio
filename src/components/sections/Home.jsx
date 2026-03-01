@@ -9,13 +9,13 @@ function Home() {
     >
       <AnimateOnScroll>
         <div className="z-10 px-6 text-center">
-          <h1 className="mb-6 bg-gradient-to-r from-blue-800 to-cyan-400 bg-clip-text p-1 text-5xl font-bold text-transparent md:text-7xl">
+          <h1 className="mb-6 bg-linear-to-r from-blue-800 to-cyan-400 bg-clip-text p-1 text-5xl font-bold text-transparent md:text-7xl">
             Hi, I'm Heimsly
           </h1>
           <p className="mx-auto mb-8 max-w-lg text-center text-lg text-gray-400">
-            I'm an aspiring Front-End Developer who loves to learn more to
-            create a clean, and scalable web applications. My goal is to improve
-            my skills to create interfaces that offer both a delightful user
+            I'm an aspiring Software Engineer who loves to learn more to create
+            a clean, and scalable web applications. My goal is to improve my
+            skills to create interfaces that offer both a delightful user
             experience and exceptional performance.
           </p>
           <div className="flex justify-center space-x-4">
