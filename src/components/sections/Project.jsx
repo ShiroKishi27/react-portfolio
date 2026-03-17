@@ -97,16 +97,20 @@ function Project() {
                 which improves accuracy and accountability.
               </p>
               <div className="flex flex-wrap gap-1">
-                {["C# / C++", ".NET ", "Arduino", "RFID", "MS SQL"].map(
-                  (items, key) => (
-                    <span
-                      key={key}
-                      className="rounded-full bg-blue-500/10 px-3 py-1 text-sm text-blue-500 transition hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)]"
-                    >
-                      {items}
-                    </span>
-                  ),
-                )}
+                {[
+                  "C# / C++",
+                  ".NET ",
+                  "Arduino",
+                  "RFID",
+                  "SQL Server (T-SQL)",
+                ].map((items, key) => (
+                  <span
+                    key={key}
+                    className="rounded-full bg-blue-500/10 px-3 py-1 text-sm text-blue-500 transition hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)]"
+                  >
+                    {items}
+                  </span>
+                ))}
               </div>
             </div>
             <div className="rounded-xl border border-white/10 bg-white/2 p-6 text-white shadow-[0_8px_32px_rgba(0,0,0,0.15)] backdrop-blur-sm after:absolute after:top-6 after:right-0 after:rounded-l-full after:border after:border-yellow-500/20 after:bg-yellow-500/10 after:px-2 after:py-0.5 after:text-[10px] after:font-medium after:tracking-wide after:text-yellow-400 after:content-['WIP'] hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] hover:after:bg-yellow-500/20">
