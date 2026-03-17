@@ -13,10 +13,10 @@ function Home() {
             Hi, I'm Heimsly
           </h1>
           <p className="mx-auto mb-8 max-w-lg text-center text-lg text-gray-400">
-            I'm an aspiring Software Engineer who loves to learn more to create
-            a clean, and scalable web applications. My goal is to improve my
-            skills to create interfaces that offer both a delightful user
-            experience and exceptional performance.
+            I'm an aspiring Software Engineer passionate about continuous
+            learning and building clean, scalable web applications. I strive to
+            craft interfaces that deliver both an exceptional user experience
+            and high performance.
           </p>
           <div className="flex justify-center space-x-4">
             <NavLink
