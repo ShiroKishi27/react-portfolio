@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar";
 import StarBackground from "./components/StarBackground";
 import ArrowUp from "./components/ArrowUp";
 import ScrollToSection from "./ScrollToSection";
+import { Toaster } from "sonner";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -19,6 +20,7 @@ function App() {
         className={`min-h-screen transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"} bg-black text-gray-100`}
       >
         <StarBackground />
+        <Toaster position="top-right" richColors theme="dark" />
         <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Routes>
