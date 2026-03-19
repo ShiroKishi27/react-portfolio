@@ -1,4 +1,6 @@
 import AnimateOnScroll from "../AnimateOnScroll";
+import SkillsCard from "../SkillsCard";
+import SkillsBadge from "../SkillsBadge";
 
 function About() {
   const webDev = [
@@ -54,47 +56,25 @@ function About() {
               reliable and efficient systems.
             </p>
             <div className="grid grid-cols-1 gap-x-6 md:grid-cols-2">
-              <div className="rounded-xl p-6 transition-all hover:translate-y-1">
-                <h3 className="mb-4 text-xl font-bold">Web Development</h3>
-                <div className="flex flex-wrap gap-2">
-                  {webDev.map((skills, index) => (
-                    <span
-                      key={index}
-                      className="rounded-full bg-blue-500/10 px-3 py-1 text-sm text-blue-500 transition hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]"
-                    >
-                      {skills}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <div className="rounded-xl p-6 transition-all hover:translate-y-1">
-                <h3 className="mb-4 text-xl font-bold">Backend & Database</h3>
-                <div className="flex flex-wrap gap-2">
-                  {backend.map((skills, index) => (
-                    <span
-                      key={index}
-                      className="rounded-full bg-blue-500/10 px-3 py-1 text-sm text-blue-500 transition hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]"
-                    >
-                      {skills}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <div className="col-span-1 justify-self-center rounded-xl p-6 text-center transition-all hover:translate-y-1 md:col-span-2">
-                <h3 className="mb-4 text-xl font-bold">
-                  Engineering Fundamentals
-                </h3>
-                <div className="flex flex-wrap justify-center gap-2">
-                  {otherSkills.map((skills, index) => (
-                    <span
-                      key={index}
-                      className="rounded-full bg-blue-500/10 px-3 py-1 text-sm text-blue-500 transition hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]"
-                    >
-                      {skills}
-                    </span>
-                  ))}
-                </div>
-              </div>
+              <SkillsCard title="Web Development">
+                {webDev.map((skills, index) => (
+                  <SkillsBadge key={index} label={skills} />
+                ))}
+              </SkillsCard>
+              <SkillsCard title="Backend & Database">
+                {backend.map((skills, index) => (
+                  <SkillsBadge key={index} label={skills} />
+                ))}
+              </SkillsCard>
+              <SkillsCard
+                title="Engineering Fundamentals"
+                className="col-span-1 justify-self-center text-center md:col-span-2"
+                divClassName="justify-center"
+              >
+                {otherSkills.map((skills, index) => (
+                  <SkillsBadge key={index} label={skills} />
+                ))}
+              </SkillsCard>
             </div>
           </div>
           <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
