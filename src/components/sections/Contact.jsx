@@ -78,7 +78,7 @@ function Contact() {
 
                 <div>
                   <h3 className="mb-2 text-xl font-bold">Let's Connect</h3>
-                  <p className="mb-6 text-gray-300">
+                  <p className="mb-6 text-gray-400">
                     I'm currently open to full-time opportunities and available
                     for collaboration on real-world projects.
                   </p>
@@ -89,7 +89,7 @@ function Contact() {
                         href="mailto:heimslycalauagan@gmail.com?subject=Portfolio%20Contact%20-%20Full-time%20Opportunity"
                         className="flex items-center gap-3 hover:text-blue-400"
                       >
-                        <FaEnvelope />
+                        <FaEnvelope size={20} />
                         heimslycalauagan@gmail.com
                       </a>
                       <button
@@ -106,7 +106,7 @@ function Contact() {
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 hover:text-blue-400"
                     >
-                      <FaGithub /> github.com/ShiroKishi27
+                      <FaGithub size={20} /> github.com/ShiroKishi27
                     </a>
 
                     <a
@@ -115,12 +115,12 @@ function Contact() {
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 hover:text-blue-400"
                     >
-                      <FaLinkedin /> linkedin.com/in/heimsly-jr
+                      <FaLinkedin size={20} /> linkedin.com/in/heimsly-jr
                     </a>
                   </div>
                 </div>
 
-                <p className="mt-6 text-xs text-gray-400">
+                <p className="mt-6 text-xs text-gray-500">
                   I typically respond within 24-48 hours.
                 </p>
               </div>
