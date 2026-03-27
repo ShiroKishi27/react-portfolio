@@ -124,17 +124,6 @@ function Project() {
                 A full-stack e-commerce platform for tech gadgets built with
                 Next.js and Supabase.
               </p>
-
-              <ul className="mb-3 list-inside list-disc space-y-1 text-sm text-gray-400">
-                <li>Authentication and role-based access</li>
-                <li>Product and admin management</li>
-                <li>Shopping cart system</li>
-              </ul>
-
-              <p className="mb-3 text-xs text-gray-500">
-                In progress: checkout flow, order processing, performance
-                optimization
-              </p>
               <div className="flex flex-wrap gap-1">
                 {[
                   "Next.js",
