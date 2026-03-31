@@ -12,6 +12,7 @@ import { Toaster } from "sonner";
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [resumeOpen, setResumeOpen] = useState(false);
 
   return (
     <>
@@ -21,7 +22,12 @@ function App() {
       >
         <StarBackground />
         <Toaster position="top-right" richColors theme="dark" />
-        <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <NavBar
+          menuOpen={menuOpen}
+          setMenuOpen={setMenuOpen}
+          resumeOpen={resumeOpen}
+          setResumeOpen={setResumeOpen}
+        />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Routes>
           <Route path="/" element={<ScrollToSection sectionId="home" />} />

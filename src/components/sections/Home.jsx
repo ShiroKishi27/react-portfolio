@@ -1,5 +1,6 @@
 import AnimateOnScroll from "../AnimateOnScroll";
 import { NavLink } from "react-router-dom";
+import { FaDownload } from "react-icons/fa";
 
 function Home() {
   return (
