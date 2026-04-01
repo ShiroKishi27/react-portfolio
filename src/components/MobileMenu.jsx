@@ -7,8 +7,14 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
     { name: "About", to: "/about" },
     { name: "Project", to: "/project" },
     { name: "Contact", to: "/contact" },
-    { name: "View Resume", to: "/HeimslyCalauaganJr-Resume.pdf" },
-    { name: "Download Resume", to: "/HeimslyCalauaganJr-Resume.pdf" },
+    {
+      name: "View Resume",
+      to: "/Heimsly_Calauagan_SoftwareEngineer_Resume.pdf",
+    },
+    {
+      name: "Download Resume",
+      to: "/Heimsly_Calauagan_SoftwareEngineer_Resume.pdf",
+    },
   ];
   return (
     <>
@@ -27,7 +33,9 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
             key={link.name}
             to={link.to}
             target={
-              link.to.startsWith("/HeimslyCalauaganJr-Resume.pdf")
+              link.to.startsWith(
+                "/Heimsly_Calauagan_SoftwareEngineer_Resume.pdf",
+              )
                 ? "_blank"
                 : "_self"
             }

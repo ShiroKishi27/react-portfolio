@@ -89,7 +89,7 @@ function NavBar({ menuOpen, setMenuOpen, setResumeOpen, resumeOpen }) {
                 {resumeOpen && (
                   <div className="absolute right-0 mt-2 w-50 rounded-lg border border-white/10 bg-[rgba(10,10,10,0.95)] shadow-lg backdrop-blur-lg">
                     <a
-                      href="/HeimslyCalauaganJr-Resume.pdf"
+                      href="/Heimsly_Calauagan_SoftwareEngineer_Resume.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block px-4 py-2 text-sm text-gray-300 hover:bg-white/10 hover:text-white"
@@ -99,7 +99,7 @@ function NavBar({ menuOpen, setMenuOpen, setResumeOpen, resumeOpen }) {
                     </a>
 
                     <a
-                      href="/HeimslyCalauaganJr-Resume.pdf"
+                      href="/Heimsly_Calauagan_SoftwareEngineer_Resume.pdf"
                       download
                       className="block px-4 py-2 text-sm text-gray-300 hover:bg-white/10 hover:text-white"
                     >
