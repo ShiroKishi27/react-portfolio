@@ -25,7 +25,6 @@ function NavBar({ menuOpen, setMenuOpen, setResumeOpen, resumeOpen }) {
     function handleScroll() {
       setResumeOpen(false);
     }
-    console.log("Adding event listeners");
 
     document.addEventListener("mousedown", handleClickOutside);
     document.addEventListener("scroll", handleScroll);
@@ -34,7 +33,7 @@ function NavBar({ menuOpen, setMenuOpen, setResumeOpen, resumeOpen }) {
       document.removeEventListener("mousedown", handleClickOutside);
       document.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [setResumeOpen]);
 
   return (
     <>
