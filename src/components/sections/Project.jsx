@@ -1,4 +1,5 @@
 import AnimateOnScroll from "../AnimateOnScroll";
+import SkillsBadge from "../SkillsBadge";
 
 function Project() {
   return (
@@ -26,12 +27,7 @@ function Project() {
               <div className="mb-11 flex flex-wrap gap-2">
                 {["React 19", "Tailwind CSS", "REST API", "Lucide"].map(
                   (item, key) => (
-                    <span
-                      key={key}
-                      className="rounded-full bg-blue-500/10 px-3 py-1 text-[11px] font-medium text-blue-400"
-                    >
-                      {item}
-                    </span>
+                    <SkillsBadge key={key} label={item} />
                   ),
                 )}
               </div>
@@ -64,7 +60,8 @@ function Project() {
 
               <p className="mb-4 text-gray-400">
                 A modular dashboard architecture designed for disaster
-                management. Engineered a<strong> high-fidelity UI shell</strong>
+                management. Engineered a
+                <strong> high-fidelity UI shell </strong>
                 designed to synchronize with
                 <strong> hardware sensor nodes</strong> for real-time flood
                 prediction and emergency data visualization.
@@ -72,12 +69,7 @@ function Project() {
               <div className="mb-6 flex flex-wrap gap-1">
                 {["HTML5", "CSS3", "JavaScript", "Node.js", "Express"].map(
                   (item, key) => (
-                    <span
-                      key={key}
-                      className="rounded-full bg-blue-500/10 px-3 py-1 text-[11px] font-medium text-blue-400"
-                    >
-                      {item}
-                    </span>
+                    <SkillsBadge key={key} label={item} />
                   ),
                 )}
               </div>
@@ -110,18 +102,13 @@ function Project() {
               <p className="mb-4 text-gray-400">
                 Led the frontend refactor of a customer-facing ordering system.
                 Improved <strong>UI responsiveness</strong> and reorganized the
-                <strong>directory architecture</strong> for better developer
+                <strong> directory architecture</strong> for better developer
                 scalability.
               </p>
               <div className="mb-6 flex flex-wrap gap-1">
                 {["HTML5", "CSS3", "Bootstrap", "JS (ES6+)"].map(
                   (item, key) => (
-                    <span
-                      key={key}
-                      className="rounded-full bg-blue-500/10 px-3 py-1 text-[11px] font-medium text-blue-400"
-                    >
-                      {item}
-                    </span>
+                    <SkillsBadge key={key} label={item} />
                   ),
                 )}
               </div>
@@ -155,20 +142,16 @@ function Project() {
 
               <p className="mb-4 text-gray-400">
                 A real-time monitoring system bridging
-                <strong>Arduino hardware</strong> with a
-                <strong>.NET desktop application</strong>. Features automated
+                <strong> Arduino hardware</strong> with a
+                <strong> .NET desktop application</strong>. Features automated
                 logging via RFID tags and a robust
-                <strong>Local SQL Database</strong> for secure data persistence.
+                <strong> Local SQL Database</strong> for secure data
+                persistence.
               </p>
               <div className="mb-6 flex flex-wrap gap-1">
                 {["C# / C++", ".NET", "Arduino", "Local SQL DB"].map(
                   (item, key) => (
-                    <span
-                      key={key}
-                      className="rounded-full bg-blue-500/10 px-3 py-1 text-[11px] font-medium text-blue-400"
-                    >
-                      {item}
-                    </span>
+                    <SkillsBadge key={key} label={item} />
                   ),
                 )}
               </div>
@@ -207,12 +190,7 @@ function Project() {
               <div className="mb-6 flex flex-wrap gap-1">
                 {["Next.js", "Supabase", "PostgreSQL", "TypeScript"].map(
                   (item, key) => (
-                    <span
-                      key={key}
-                      className="rounded-full bg-blue-500/10 px-3 py-1 text-[11px] font-medium text-blue-400"
-                    >
-                      {item}
-                    </span>
+                    <SkillsBadge key={key} label={item} />
                   ),
                 )}
               </div>
