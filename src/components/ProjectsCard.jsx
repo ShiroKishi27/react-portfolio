@@ -20,7 +20,7 @@ function ProjectCardDescription({ children }) {
 
 function ProjectCardSkills({ skills }) {
   return (
-    <div className="flex gap-1">
+    <div className="flex flex-wrap gap-1">
       {skills.map((item, key) => (
         <SkillsBadge key={key} label={item} />
       ))}

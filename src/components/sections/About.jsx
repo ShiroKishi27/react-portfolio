@@ -68,8 +68,8 @@ function About() {
               </SkillsCard>
               <SkillsCard
                 title="Engineering Fundamentals"
-                className="col-span-1 justify-self-center text-center md:col-span-2"
-                divClassName="justify-center"
+                className="col-span-1 md:col-span-2 md:justify-self-center"
+                divClassName="md:justify-center"
               >
                 {otherSkills.map((skills, index) => (
                   <SkillsBadge key={index} label={skills} />
