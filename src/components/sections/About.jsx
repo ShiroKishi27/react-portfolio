@@ -55,7 +55,7 @@ function About() {
               becoming a well-rounded software engineer capable of designing
               reliable and efficient systems.
             </p>
-            <div className="grid grid-cols-1 gap-x-6 md:grid-cols-2">
+            <div className="grid grid-cols-1 gap-x-3 md:grid-cols-3">
               <SkillsCard title="Web Development">
                 {webDev.map((skills, index) => (
                   <SkillsBadge key={index} label={skills} />
@@ -66,11 +66,7 @@ function About() {
                   <SkillsBadge key={index} label={skills} />
                 ))}
               </SkillsCard>
-              <SkillsCard
-                title="Engineering Fundamentals"
-                className="col-span-1 md:col-span-2 md:justify-self-center"
-                divClassName="md:justify-center"
-              >
+              <SkillsCard title="Engineering Fundamentals">
                 {otherSkills.map((skills, index) => (
                   <SkillsBadge key={index} label={skills} />
                 ))}
