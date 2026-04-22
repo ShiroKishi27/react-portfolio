@@ -7,10 +7,12 @@ import NavBar from "./components/NavBar";
 import StarBackground from "./components/StarBackground";
 import ArrowUp from "./components/ArrowUp";
 import ScrollToSection from "./ScrollToSection";
+import NotFound from "./components/sections/NotFound";
 import { Toaster } from "sonner";
+import { useSessionState } from "./hooks/useSessionState";
 
 function App() {
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useSessionState("app_loaded", false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [resumeOpen, setResumeOpen] = useState(false);
 
@@ -43,10 +45,7 @@ function App() {
             path="/contact"
             element={<ScrollToSection sectionId="contact" />}
           />
-          <Route
-            path="*"
-            element={<h1 className="text-white">404 - Page Not Found</h1>}
-          />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <ArrowUp />
       </div>

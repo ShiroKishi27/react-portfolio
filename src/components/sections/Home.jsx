@@ -25,7 +25,7 @@ function Home() {
           <div className="flex justify-center space-x-4">
             <NavLink
               to={"/project"}
-              className="relative overflow-hidden rounded-full bg-linear-to-r from-blue-800 to-cyan-400 px-8 py-3 font-bold tracking-wider text-white uppercase transition hover:translate-y-0.5 hover:shadow-[0_0_20px_rgba(59,130,246,0.4)]"
+              className="relative overflow-hidden rounded-full bg-linear-to-r from-blue-800 to-cyan-400 px-8 py-3 font-bold tracking-wider text-white uppercase transition-all hover:translate-y-0.5 hover:shadow-[0_0_20px_rgba(59,130,246,0.4)]"
             >
               Explore Technical Work
             </NavLink>

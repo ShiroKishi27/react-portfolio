@@ -18,7 +18,7 @@ function LoadingPage({ onComplete }) {
 
         setTimeout(() => {
           onComplete();
-        }, 1500);
+        }, 500);
       }
     }, 100);
 
